@@ -24,27 +24,20 @@ a. Create a conda virtual environment and activate it.
 ```shell
 conda create --prefix ./open-mmlab python=3.7 -y
 conda activate ./open-mmlab
-```
-
-b. Install PyTorch stable or nightly and torchvision following the [official instructions](https://pytorch.org/), e.g.,
-
-```shell
+# Install PyTorch in the environment
 conda install pytorch torchvision -c pytorch
 ```
 
-c. Clone the mmdetection repository.
+
+b. Clone the mmdetection repository and install mmdetections.
 
 ```shell
 git clone https://github.com/open-mmlab/mmdetection.git
 cd mmdetection
-```
-
-d. Install mmdetection (other dependencies will be installed automatically).
-
-```shell
 pip install mmcv
 python setup.py develop  # or "pip install -v -e ."
 ```
+
 
 Note:
 
@@ -68,6 +61,10 @@ docker build -t mmdetection docker/
 ### Prepare datasets
 
 It is recommended to symlink the dataset root to `$MMDETECTION/data`.
+```shell
+mkdir data
+```
+
 If your folder structure is different, you may need to change the corresponding paths in config files.
 
 ```
