@@ -22,8 +22,8 @@ We have tested the following versions of OS and softwares:
 a. Create a conda virtual environment and activate it.
 
 ```shell
-conda create -n open-mmlab python=3.7 -y
-conda activate open-mmlab
+conda create --prefix ./open-mmlab python=3.7 -y
+conda activate ./open-mmlab
 ```
 
 b. Install PyTorch stable or nightly and torchvision following the [official instructions](https://pytorch.org/), e.g.,
