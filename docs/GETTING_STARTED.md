@@ -161,7 +161,7 @@ According to the [Linear Scaling Rule](https://arxiv.org/abs/1706.02677), you ne
 ### Train with a single GPU
 
 ```shell
-python tools/train.py ${CONFIG_FILE}
+python tools/train.py ${CONFIG_FILE} --autoscale-lr --work_dir configs/puck_task_60/faster_rcnn_/
 ```
 
 If you want to specify the working directory in the command, you can add an argument `--work_dir ${YOUR_WORK_DIR}`.
