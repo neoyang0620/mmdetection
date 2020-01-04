@@ -161,6 +161,12 @@ According to the [Linear Scaling Rule](https://arxiv.org/abs/1706.02677), you ne
 ### Train with a single GPU
 
 ```shell
+# Modify the configuration .py file
+vim ...
+....
+....
+
+
 python tools/train.py ${CONFIG_FILE} --autoscale-lr --work_dir configs/puck_task_60/faster_rcnn_/
 ```
 
