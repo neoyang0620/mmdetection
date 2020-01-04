@@ -162,7 +162,24 @@ According to the [Linear Scaling Rule](https://arxiv.org/abs/1706.02677), you ne
 
 ```shell
 # Modify the configuration .py file
-vim ...
+vim .py
+#dataset settins
+dataset_type = 'puck_coco'
+data_root = 'data/PUCK_DATASET_NAME'
+img_norm_cfg = dict{}. # compute the mean and std of your custom dataset
+
+data = dict{
+
+# Change the names and paths of training/val/test set
+
+train=dict{}
+val = dict{}
+test = dict{}
+
+
+
+}
+
 ....
 ....
 
